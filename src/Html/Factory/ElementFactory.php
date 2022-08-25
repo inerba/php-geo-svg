@@ -34,7 +34,7 @@ class ElementFactory
         $svgElement = (new SvgElement())
             // ->setAttribute('width', $coordinator->getWidth())
             // ->setAttribute('height', $coordinator->getHeight())
-            ->setAttribute('style', 'fill: skyblue; stroke: cadetblue; stroke-width: 2;')
+            ->setAttribute('style', 'fill: transparent; stroke: cadetblue; stroke-width: 2;')
             ->setAttribute('viewbox', '0 0 ' . $coordinator->getWidth() . ' ' . $coordinator->getHeight());
 
         foreach ($geometryCollection->getGeometryObjects() as $geometryObject) {
